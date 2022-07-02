@@ -1,0 +1,11 @@
+20:51:34 **** Rebuild of configuration Debug for project Sp_Lab_Bianca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\controller.o" "..\\src\\controller.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\LinkedList.o" "..\\src\\LinkedList.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\movie.o" "..\\src\\movie.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utn.o" "..\\src\\utn.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Sp_Lab_Bianca.o" "..\\src\\Sp_Lab_Bianca.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu.o" "..\\src\\menu.c" 
+gcc -o Sp_Lab_Bianca.exe "src\\LinkedList.o" "src\\Sp_Lab_Bianca.o" "src\\controller.o" "src\\menu.o" "src\\movie.o" "src\\parser.o" "src\\utn.o" 
+Info: Nothing to build for Sp_Lab_Bianca

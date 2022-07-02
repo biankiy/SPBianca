@@ -1,0 +1,22 @@
+/*
+ * menu.h
+ *
+ *  Created on: 1 jul. 2022
+ *      Author: bianky
+ */
+
+#ifndef MENU_H_
+#define MENU_H_
+
+
+
+#endif /* MENU_H_ */
+
+/// @brief Muestra el menu principal de opciones
+///
+void menu();
+
+///	 @brief muestra el menu de genero de peliculas
+///
+/// @return
+void menu_generoPeliculas();

@@ -1,0 +1,50 @@
+/*
+ * menu.c
+ *
+ *  Created on: 1 jul. 2022
+ *      Author: bianky
+ */
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include "LinkedList.h"
+#include "movie.h"
+#include "menu.h"
+#include "parser.h"
+#include "controller.h"
+#include "utn.h"
+#include <time.h>
+
+void menu()
+{
+
+    printf("\n\n");
+	printf("<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>\n");
+	printf("<><><>>>>>>>>>>>  ABM MOTOS UTN  <<<<<<<<<<<<><><><><<><><><><><><\n");
+	printf("<><><><><><><><><><><><><><><><><><><><><><><><><><><<><><><><><><><>\n");
+	printf("<><><| [ 1 ] <= [ CARGAR ARCHIVO      ] |><><><>\n");
+	printf("<><><| [ 2 ] <= [ IMPRIMIR LISTA      ] |><><><>\n");
+	printf("<><><| [ 3 ] <= [ ASIGNAR TIEMPOS     ] |><><><>\n");
+	printf("<><><| [ 4 ] <= [ FILTRAR POR TIPO    ] |><><><>\n");
+	printf("<><><| [ 5 ] <= [ MOSTRAR DURACION    ] |><><><>\n");
+	printf("<><><| [ 6 ] <= [ LISTAR COLORES     ] |><><><>\n");
+	printf("<><><| [ 7 ] <= [ LISTAR SERVICIO    ] |><><><>\n");
+	printf("<><><| [ 8 ] <= [ ALTA TRABAJO       ] |><><><>\n");
+	printf("<><><| [ 9 ] <= [ LISTAR TRABAJO     ] |><><><>\n");
+	printf("<><><| [ 10] <= [ INFORMES           ] |><><><>\n");
+	printf("<><><| [ 11] <= [ SALIR              ] |><><><>\n");
+	printf("<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>\n");
+	printf("<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>\n");
+
+}
+
+void menu_generoPeliculas()
+{
+    printf("<><><>>>>>>>>> MENU GENERO DE PELICULAS <<<<<<<<><><><><\n");
+    printf("--------------------------------------------------------\n");
+    printf("[1]- Drama \n");
+    printf("[2]- Comedia \n");
+    printf("[3]- Accion \n");
+    printf("[4]- Terror \n");
+
+}

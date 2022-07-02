@@ -1,0 +1,68 @@
+/*
+ * controller.h
+ *
+ *  Created on: 1 jul. 2022
+ *      Author: bianky
+ */
+
+#include "movie.h"
+#include "LinkedList.h"
+
+#ifndef CONTROLLER_H_INCLUDED
+#define CONTROLLER_H_INCLUDED
+
+
+
+#endif // CONTROLLER_H_INCLUDED
+
+
+int menu();
+int menuFiltrado();
+
+
+
+/** \brief Lista una pelicula cargada
+ * \ param eMovie* elemento
+ */
+void controller_listMovie(eMovie* aux);
+
+/** \brief Listar peliculas cargadas
+ *  \param LinkedList* lista
+ *  \return int error 0(sin errores) || error 1(con error)
+*/
+int controller_listMovies(LinkedList* lista);
+
+//funciones para calcular y asignar randoms
+void* controller_generarRating(void* aux);
+void* controller_generarGenero(void* aux);
+int controller_asignarRatings(LinkedList* lista);
+
+int controller_asignarGeneros(LinkedList* lista);
+
+
+//funciones para filtrar lista segun genero
+int controller_filterComedia(void* aux);
+int controller_filterTerror(void* aux);
+int controller_filterAccion(void* aux);
+int controller_filterDrama(void* aux);
+
+
+//funcion de ordenamiento
+int controller_sortGeneroRating(void* auxI, void* auxJ);
+
+
+//funciones que interactuan conc archivos
+
+/** \brief Carga los datos de las peliculas desde el archivo csv (modo texto).
+ * \param char* path
+ * \param LinkedList* lista
+ * \return int error 0(sin errores) || error 1(con error)
+ */
+
+int controller_loadFromText(char* path, LinkedList* lista);
+/** \brief Guarda los datos de las peliculas en un archivo csv (modo texto).
+ * \param path char*
+ * \param pArrayListPassenger LinkedList*
+ * \return int error 0(sin errores) || error 1(con error)
+ */
+int controller_saveAsText(char* path, LinkedList* lista);

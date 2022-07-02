@@ -1,0 +1,57 @@
+/*
+ * menu.c
+ *
+ *  Created on: 1 jul. 2022
+ *      Author: bianky
+ */
+
+
+#include <stdio.h>
+#include <stdlib.h>
+#include "controller.h"
+#include "movie.h"
+#include "menu.h"
+#include "LinkedList.h"
+int menu()
+{
+
+    int opcion;
+
+    printf("       *** MENU OPCIONES *** \n");
+    printf("------------------------------\n");
+    printf("1- Cargar archivo de texto \n");
+    printf("2- Imprimir lista \n");
+    printf("3- Asignar rating \n");
+    printf("4- Asignar genero \n");
+    printf("5- Filtrar por genero \n");
+    printf("6- Ordenar pelicula - por genero y rating \n");
+    printf("7- Guardar en archivo de texto \n");
+    printf("8- Salir \n");
+    printf("\nIngrese opcion: ");
+    scanf("%d", &opcion);
+
+    return opcion;
+}
+
+
+/** \brief muestra menu para filtrado de lista
+ * \return opcion elegida por el usuario
+ */
+int menu_generoPeliculas()
+{
+
+    int opcion;
+
+    printf("       *** MENU FILTRADO *** \n");
+    printf("------------------------------\n");
+    printf("Mostrar lista de peliculas segun genero: \n");
+    printf("1- Drama \n");
+    printf("2- Comedia \n");
+    printf("3- Accion \n");
+    printf("4- Terror \n");
+
+    printf("\nIngrese opcion: ");
+    scanf("%d", &opcion);
+
+    return opcion;
+}

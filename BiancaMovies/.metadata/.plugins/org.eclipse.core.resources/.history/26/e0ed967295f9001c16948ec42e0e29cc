@@ -1,0 +1,100 @@
+/*
+ * controller.h
+ *
+ *  Created on: 1 jul. 2022
+ *      Author: bianky
+ */
+
+#include "movie.h"
+#include "LinkedList.h"
+
+#ifndef CONTROLLER_H_INCLUDED
+#define CONTROLLER_H_INCLUDED
+
+
+
+#endif // CONTROLLER_H_INCLUDED
+
+
+/** \brief Lista una pelicula
+ * \ param eMovie* elemento
+ */
+void controller_listMovie(eMovie* aux);
+
+/** \brief lista peliculas
+ *  \param LinkedList* lista
+ *  \return int error 0(sin errores) || error 1(con error)
+*/
+int controller_listMovies(LinkedList* lista);
+
+/** \brief Genera un numero random entre 1 y 10 con 1 decimal y lo asigna a campo rating mediante setter.
+ * \param puntero a void
+ * \return puntero a void con rating cargado
+ */
+void* controller_generarDuracion(void* aux);
+/** \brief Genera un numero random entre 1 y 4 y lo asigna a campo genero mediante setter.
+ * \param puntero a void
+ * \return puntero a void con genero cargado
+ */
+void* controller_generarGenero(void* aux);
+
+/** \brief llama a ll_map y le pasa un puntero a funcion
+ * \param linkedList* lista
+ * \return 0 sin errores || -1 con error
+ */
+int controller_asignarTiempo(LinkedList* lista);
+
+/** \brief llama a ll_map y le pasa un puntero a funcion
+ * \param linkedList* lista
+ * \return 0 sin errores || -1 con error
+ */
+int controller_asignarGeneros(LinkedList* lista);
+
+
+/** \brief funcion que filtra lista segun genero elegido por el usuario
+ * \param puntero a void
+ * \return 1 o 0 segun corresponda a la listao o no
+ */
+int controller_filterComedia(void* aux);
+/** \brief funcion que filtra lista segun genero elegido por el usuario
+ * \param puntero a void
+ * \return 1 o 0 segun corresponda a la listao o no
+ */
+int controller_filterTerror(void* aux);
+/** \brief funcion que filtra lista segun genero elegido por el usuario
+ * \param puntero a void
+ * \return 1 o 0 segun corresponda a la listao o no
+ */
+int controller_filterAccion(void* aux);
+/** \brief funcion que filtra lista segun genero elegido por el usuario
+ * \param puntero a void
+ * \return 1 o 0 segun corresponda a la listao o no
+ */
+int controller_filterDrama(void* aux);
+
+
+//funcion de ordenamiento
+
+
+/** \brief Funcion para ordenamiento segun genero y rating descendente
+ * \param  dos punteros a void para realizar la comparacion
+ * \return 1 o 0 segun corresponda
+ */
+int controller_sortGeneroDuracion(void* auxI, void* auxJ);
+
+
+//funciones que interactuan conc archivos
+
+/** \brief Carga los datos de las peliculas desde el archivo csv (modo texto).
+ * \param char* path
+ * \param LinkedList* lista
+ * \return int error 0(sin errores) || error 1(con error)
+ */
+
+int controller_loadFromText(char* path, LinkedList* lista);
+/** \brief Guarda los datos de las peliculas en un archivo csv (modo texto).
+ * \param path char*
+ * \param pArrayListPassenger LinkedList*
+ * \return int error 0(sin errores) || error 1(con error)
+ */
+int controller_saveAsText(char* path, LinkedList* lista);
